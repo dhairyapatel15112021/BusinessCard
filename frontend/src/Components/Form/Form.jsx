@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { Card } from '../Card/Card';
 import { updateContext } from '../../App';
 
-export const Form = () => {
+const Form = () => {
     const [formData, setFormData] = useState({});
     const [hobbies, setHobbies] = useState([]);
     const [cards, setCards] = useState([]);
@@ -119,3 +119,5 @@ export const Form = () => {
         </div>
     )
 }
+
+export default Form;

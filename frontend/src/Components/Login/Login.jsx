@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { loginContext } from '../../App';
 
-export const Login = () => {
+const Login = () => {
   const {isLogin,setLogin} = useContext(loginContext);
   const navigate = useNavigate();
   const [formData,setFormData] = useState({});
@@ -40,3 +40,5 @@ export const Login = () => {
     </form>
   )
 }
+
+export default Login;
